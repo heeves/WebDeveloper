@@ -1,0 +1,25 @@
+<html>
+<script>
+function Checar(){
+var nome=document.form1.name.value;
+if(window.confirm("o seu nome é"+nome+"?")){
+document.write(nome+"obrigado");
+}
+else{
+alert("digite seu nome novamente");
+}
+}
+function fechar(){
+window.close();
+}
+</script>
+<body>
+<form name="form1">
+Digite o seu nome aqui:<br>
+<input type="text" name="nome">
+<input type="button" value="confirmar" onClick="Checar()">
+<input type="button" value="sair" onClick="fechar()">
+</form>
+<a href=java2.html>voltar/</a><a href=java11.html>avançar</a>
+</body>
+</html>
